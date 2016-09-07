@@ -3,33 +3,27 @@
 #include <Windows.h>
 #include "PEParser.h"
 
-typedef void* (WINAPI *GETPROCADDRESS) (
-	__in HMODULE hModulem,
-	__in LPCSTR  lProcName
-);
+using namespace PEParser;
+using NtLoadDriverT = NTSTATUS(NTAPI*) (__in PUNICODE_STRING DriverServiceName);
 
 int _tmain(int argc, _TCHAR** argv)
 {
-	std::string procedure;
-
-	std::cout << "<< Procedure Name: ";
-	std::cin  >> procedure;
-
-	auto Routine = PEParser::GetRoutineAddress<void*>(procedure);
-
+	std::string procedure = "NtLoadDriver";
+	
+	auto Routine = GetRoutineAddress<NtLoadDriverT>(procedure);
+	
 	if (Routine != nullptr)
 	{
-		std::cout << "\t  > [Address]: 0x" << Routine << std::endl;
+		std::cout << "[Address]: 0x" << Routine << std::endl;
 		MessageBeep(0x40);
 	}
 	else
 	{
-		std::wcout << "No address found." << std::endl;
+		std::cout << "No address found." << std::endl;
 		MessageBeep(0x10);
 	}
 
-	std::wcin.get();
-	std::wcin.get();
+	std::cin.get();
 
 	return 0;
 }
