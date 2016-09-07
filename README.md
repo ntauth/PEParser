@@ -1,11 +1,11 @@
 <snippet>
   <content><![CDATA[
-# ${1:PEParser}
-A simple C++11 PE Parser implementation (only retrieves exports' addresses at the moment)
+# ${1:Project Name}
+TODO: Write a project description
 ## Installation
 TODO: Describe the installation process
 ## Usage
-Feel free to use it however you want
+TODO: Write usage instructions
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -13,11 +13,11 @@ Feel free to use it however you want
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-- First Commit: /
-- Second Commit: 
-  * Edited the sample code
+TODO: Write history
+## Credits
+TODO: Write credits
 ## License
-MIT License
+TODO: Write license
 ]]></content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
