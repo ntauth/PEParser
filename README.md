@@ -1,11 +1,7 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Project Name}
-TODO: Write a project description
-## Installation
-TODO: Describe the installation process
+# PEParser
+A Simple C++11 PE Parser implementation (only allows to check exports for now)
 ## Usage
-TODO: Write usage instructions
+Feel free to use it however you want
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -13,11 +9,6 @@ TODO: Write usage instructions
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 ## History
-TODO: Write history
-## Credits
-TODO: Write credits
+TODO: Add History
 ## License
-TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+MIT License
